@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes del Bienestar</title>
+    <link rel="icon" type="image/x-icon" href="../static/images/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@1.8.4"></script>
+    <link rel="stylesheet" href="../static/styles/style.css">
+    <link rel="stylesheet" href="../static/fonts/GMX-Regular.ttf">
+    <header>
+        <div id="LogoHeader">
+            <img src="../static/images/gob.png" alt="Logo" />
+        </div>
+        <h1>Viajes del Bienestar</h1>
+    </header>
+</head>
+
+<body>
+    <div id="content">
+        <div id="left">
+            <form id="myForm" action="/search" method="post">
+                <div class="cards-container">
+                    <!-- Carta con los Checkboxes -->
+                    <div class="card" id="TeOdioAimep">
+                        <div class="contenedor">
+                            <!-- Cortina Desplegable (Select) para el grupo de Radios -->
+                            <div class="radio-group" id="objeto">
+                                <label for="tipo" id="Titles">¿Qué quiero visitar?</label>
+                                <br>
+                                <select id="visitar" name="visitar" required>
+                                    <option value="">Seleccione una opción...</option>
+                                    <option value="Playa">Quiero playa?</option>
+                                    <option value="Bosque">Quiero bosque?</option>
+                                    <option value="Desierto">Quiero desierto?</option>
+                                    <option value="Montaña">Quiero montaña?</option>
+                                    <option value="Ciudad">Quiero ciudad?</option>
+                                    <option value="Selva">Quiero selva?</option>
+                                    <option value="Laguna">Quiero laguna?</option>
+                                    <option value="Isla">Quiero isla?</option>
+                                    <option value="Pueblo">Quiero pueblo?</option>
+                                    <option value="Pueblo Mágico">Quiero pueblo mágico?</option>
+                                    <option value="Cascada">Quiero cascada?</option>
+                                    <option value="Cenote">Quiero cenote?</option>
+                                    <option value="Volcán">Quiero volcán?</option>
+                                </select>
+                            </div>
+
+                            <!-- Grupo de Checkboxes -->
+                            <div class="checkbox-group" id="objeto">
+                                <label for="Weather" id="Titles">¿Qué clima?</label>
+                                <br>
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" id="calido" name="checkbox_group2" value="calido"
+                                        class="plus-minus">
+                                    <span>Cálido?</span>
+                                </label>
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" id="soleado" name="checkbox_group2" value="soleado"
+                                        class="plus-minus">
+                                    <span>Soleado?</span>
+                                </label>
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" id="humedo" name="checkbox_group2" value="humedo"
+                                        class="plus-minus">
+                                    <span>Húmedo?</span>
+                                </label>
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" id="caluroso" name="checkbox_group2" value="caluroso"
+                                        class="plus-minus">
+                                    <span>Caluroso?</span>
+                                </label>
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" id="fresco" name="checkbox_group2" value="fresco"
+                                        class="plus-minus">
+                                    <span>Fresco?</span>
+                                </label>
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" id="seco" name="checkbox_group2" value="seco"
+                                        class="plus-minus">
+                                    <span>Seco?</span>
+                                </label>
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" id="tropical" name="checkbox_group2" value="tropical"
+                                        class="plus-minus">
+                                    <span>Tropical?</span>
+                                </label>
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" id="frio" name="checkbox_group2" value="frio"
+                                        class="plus-minus">
+                                    <span>Frío?</span>
+                                </label>
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" id="templado" name="checkbox_group2" value="templado"
+                                        class="plus-minus">
+                                    <span>Templado?</span>
+                                </label>
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" id="lluvioso" name="checkbox_group2" value="lluvioso"
+                                        class="plus-minus">
+                                    <span>Lluvioso?</span>
+                                </label>
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" id="ventoso" name="checkbox_group2" value="ventoso"
+                                        class="plus-minus">
+                                    <span>Ventoso?</span>
+                                </label>
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" id="variable" name="checkbox_group2" value="variable"
+                                        class="plus-minus">
+                                    <span>Variable?</span>
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="Days">¿Cuántos días pienso quedarme?</label><br>
+                            <br>
+                            <input type="number" name="days" id="Inputs" placeholder="1? 2? 3?" min="1" max="30"
+                                required><br><br>
+                            <label for="Budget">¿Cuál es mi presupuesto?</label><br><br>
+                            <input type="number" name="budget" id="Inputs" placeholder="Mi presupuesto es..." min="1"
+                                required><br><br>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="submit" value="Buscar" class="button-73"
+                                onclick="return validateCheckboxes();">
+                            {% if results %}
+                            <a href="/" class="btn btn-secondary" id="button-91">Reiniciar búsqueda</a>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <!-- Carta de Recomendaciones -->
+                    {% if recommendations %}
+                    <div class="card" id="TeOdioAimep">
+                        <div class="contenedor">
+                            <h3>Recomendaciones:</h3>
+                            <ul>
+                                {% for rec in recommendations %}
+                                <!-- for rec in recommendations:
+
+for: Es una estructura de control que se utiliza para crear bucles en Jinja2. En este caso, está iterando sobre una lista o colección de elementos.
+
+rec: Es el nombre de la variable que va a representar cada elemento de la lista recommendations en cada iteración del bucle. Por ejemplo, si recommendations es una lista de recomendaciones, rec representará cada recomendación individual en cada ciclo del bucle.
+
+in recommendations: Aquí, recommendations es una variable que debe contener una lista o algún tipo de colección (como un array o un DataFrame convertido a lista), y el bucle va a recorrer todos los elementos dentro de esa colección.
+ -->
+                                <li>{{ rec }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+        </div>
+        <div id="right">
+            <div id="results">
+                {% if results %}
+                <div class="cards-container">
+                    {% for row in results %}
+                    <!-- for row in results:
+
+for: Inicia un bucle que va a iterar sobre una colección de elementos.
+
+row: Es el nombre de la variable que va a representar cada elemento individual en la iteración. En este caso, row se refiere a cada fila de datos dentro de la colección results.
+
+in results: results es la colección sobre la que se va a iterar. Puede ser una lista, un diccionario, un conjunto de objetos, o incluso un DataFrame de pandas que se haya convertido en lista o iterado fila por fila. -->
+                    <div class="card" id="card-{{ loop.index }}">
+                        <div class="card-content" id="card-content-{{ loop.index }}">
+                            <div class="text-content">
+                                <div id="details-{{ loop.index }}">
+                                    {% if row['Lat'] and row['Long'] %}
+                                    <iframe src="{{ url_for('static', filename='maps/map_' ~ loop.index ~ '.html') }}"
+                                        width="200" height="150"></iframe>
+                                    {% else %}
+                                    <p>No disponible</p>
+                                    {% endif %}
+                                </div>
+                                <img src="{{ url_for('static', filename='images/playaa.jpg') }}" alt="Imagen de ejemplo"
+                                    id="Lugar">
+                                <h2>{{ row['Name'] }}</h2>
+                                <p>Clima: {{ row['Weather'] }}</p>
+                                <p>Costo diario: ${{ row['Cost'] }}</p>
+                                <p>Precio final calculado: ${{ (row['Cost'] * days) | round(2) }}</p>
+                                
+                                <!-- En la expresión <p>Precio final calculado: ${{ (row['Cost'] * days) | round(2) }}</p>, el | se utiliza como un filtro de Jinja2 para transformar o modificar el valor antes de que sea mostrado en la plantilla HTML. -->
+
+                                <p>Distancia desde mi posición: {{ row['Distance']['value'] }} {{
+                                    row['Distance']['unit'] }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <p id="Nada">No se encontraron resultados, si no has ingresado nada, de igual manera se mostrará este mensaje.</p>
+                <p></p>
+                {% endif %}
+            </div>
+        </div>
+
+        <div id="bottom">
+
+        </div>
+    </div>
+    <script>
+    // Definir la función que valida los checkboxes
+    function validateCheckboxes() {
+        // Obtener todos los checkboxes con el nombre 'checkbox_group2'
+        var checkboxes = document.getElementsByName('checkbox_group2');
+
+            // document: Hace referencia al objeto del documento HTML cargado en el navegador.
+            // getElementsByName(): Es un método que devuelve una colección de nodos (un tipo de array-like) de todos los elementos que tienen un atributo name con el valor que se pasa como parámetro.
+
+        // Inicializar la variable 'checked' en 'false'. Esta variable determinará si al menos un checkbox está seleccionado.
+        var checked = false;
+
+        // Bucle que recorre todos los checkboxes para verificar si alguno está marcado
+        for (var i = 0; i < checkboxes.length; i++) {
+            // Comprobar si el checkbox actual está marcado
+            if (checkboxes[i].checked) {
+                // Si encontramos un checkbox marcado, cambiamos la variable 'checked' a 'true' y salimos del bucle
+                checked = true;
+                break;  // Sale del bucle porque ya encontramos un checkbox marcado, no es necesario seguir comprobando
+            }
+        }
+
+        // Si no se encontró ningún checkbox marcado
+        if (!checked) {
+            // Muestra una alerta para avisar al usuario que debe seleccionar al menos una opción
+            alert("Por favor, selecciona al menos una opción de clima.");
+            // Retorna 'false' para impedir que el formulario se envíe
+            return false;
+        }
+
+        // Si al menos un checkbox está marcado, permite el envío del formulario
+        return true;
+    }
+    </script>
+</body>
+
+</html>

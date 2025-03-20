@@ -1,0 +1,101 @@
+ID,Name,Weather,Type,Cost,Lat,Long
+1,Cancún,Cálido y soleado,Playa,1500,21.1743,-86.8466
+2,Tulum,Cálido y húmedo,Playa,1800,20.2113,-87.4650
+3,Puerto Escondido,Cálido y ventoso,Playa,1200,15.8589,-97.0637
+4,Playa del Carmen,Soleado y húmedo,Playa,1600,20.6296,-87.0731
+5,Los Cabos,Soleado y seco,Playa,2000,22.8905,-109.9162
+6,Mazatlán,Húmedo y soleado,Playa,1400,23.2492,-106.4117
+7,Acapulco,Caluroso y húmedo,Playa,1300,16.8636,-99.8902
+8,Huatulco,Cálido y soleado,Playa,1700,15.7450,-96.1042
+9,Sayulita,Soleado y tropical,Playa,1100,20.8800,-105.4432
+10,Vallarta,Cálido y húmedo,Playa,1500,20.6534,-105.2253
+11,San Cristóbal de las Casas,Templado y fresco,Montaña,800,16.7404,-92.6353
+12,Creel,Frío y seco,Bosque,1000,27.6278,-107.6345
+13,Barrancas del Cobre,Fresco y seco,Montaña,1200,26.9474,-107.6293
+14,Valle de Bravo,Templado y soleado,Bosque,900,19.1825,-100.1342
+15,Puebla,Templado y húmedo,Ciudad,1100,19.0414,-98.2063
+16,San Miguel de Allende,Templado y seco,Ciudad,1300,20.9140,-100.7460
+17,Guanajuato,Fresco y soleado,Ciudad,1000,21.0190,-101.2574
+18,Oaxaca,Templado y soleado,Ciudad,1200,17.0732,-96.7266
+19,Querétaro,Templado y seco,Ciudad,1100,20.5888,-100.3899
+20,CDMX,Templado y variable,Ciudad,1400,19.4326,-99.1332
+21,Real de Catorce,Seco y fresco,Desierto,1300,23.5663,-100.8964
+22,Palenque,Caluroso y húmedo,Selva,1400,17.4773,-92.0467
+23,Bacalar,Cálido y húmedo,Laguna,1500,18.6803,-88.4057
+24,Holbox,Cálido y ventoso,Isla,1800,21.5239,-87.3472
+25,Isla Mujeres,Soleado y húmedo,Isla,1600,21.2246,-86.7365
+26,La Paz,Soleado y seco,Playa,1700,24.1426,-110.3124
+27,Mérida,Caluroso y húmedo,Ciudad,1300,21.0158,-89.1804
+28,Tequila,Templado y seco,Pueblo,1000,20.8810,-103.8286
+29,Pátzcuaro,Fresco y húmedo,Pueblo,900,19.5150,-101.6045
+30,Tlaxcala,Templado y soleado,Pueblo,950,19.3133,-98.2400
+31,Xilitla,Húmedo y fresco,Selva,1100,21.4847,-98.9451
+32,Cuernavaca,Templado y soleado,Ciudad,1200,18.9262,-99.2352
+33,Morelia,Fresco y seco,Ciudad,1000,19.7011,-101.1925
+34,Zacatecas,Templado y seco,Ciudad,1100,22.7697,-102.5835
+35,San Luis Potosí,Templado y seco,Ciudad,1200,22.1567,-100.9855
+36,Cozumel,Cálido y soleado,Isla,1800,20.5003,-86.9516
+37,Manzanillo,Húmedo y soleado,Playa,1400,19.0503,-104.3160
+38,Tepoztlán,Templado y soleado,Montaña,900,18.9800,-99.1565
+39,Chetumal,Cálido y húmedo,Ciudad,1300,18.5046,-88.3020
+40,Ensenada,Fresco y seco,Playa,1400,31.8669,-116.5965
+41,Taxco,Templado y soleado,Pueblo Mágico,1000,18.5586,-99.6054
+42,Chichen Itzá,Caluroso y húmedo,Arqueológico,1200,20.6829,-88.5687
+43,Teotihuacán,Templado y seco,Arqueológico,1100,19.6925,-98.8438
+44,Monte Albán,Templado y soleado,Arqueológico,1000,17.0438,-96.7672
+45,Uxmal,Caluroso y húmedo,Arqueológico,1300,20.3592,-89.7686
+46,El Tajín,Cálido y húmedo,Arqueológico,1200,20.4481,-97.3783
+47,Coba,Caluroso y húmedo,Arqueológico,1400,20.4875,-87.7389
+48,Tula,Templado y seco,Arqueológico,900,20.0644,-99.3411
+49,Xcaret,Cálido y húmedo,Parque,1800,20.5783,-87.1197
+50,Xel-Há,Cálido y húmedo,Parque,1700,20.3238,-87.3637
+51,Hierve el Agua,Templado y soleado,Cascada,1000,16.8647,-96.2786
+52,Grutas de Cacahuamilpa,Fresco y húmedo,Gruta,800,18.6736,-99.5008
+53,Grutas de Tolantongo,Templado y húmedo,Gruta,1200,20.6936,-98.9997
+54,Nevado de Toluca,Frío y ventoso,Volcán,1100,19.1025,-99.7581
+55,Pico de Orizaba,Frío y seco,Volcán,1500,19.0306,-97.2697
+56,Popocatépetl,Frío y ventoso,Volcán,1300,19.0225,-98.6278
+57,Iztaccíhuatl,Frío y ventoso,Volcán,1400,19.1803,-98.6419
+58,Paricutín,Templado y seco,Volcán,1000,19.4936,-102.2519
+59,Cenote Ik Kil,Cálido y húmedo,Cenote,1200,20.5883,-88.5686
+60,Cenote Dos Ojos,Cálido y húmedo,Cenote,1300,20.3286,-87.3925
+61,Cenote Samulá,Cálido y húmedo,Cenote,1100,20.6308,-88.2458
+62,Cenote Azul,Cálido y húmedo,Cenote,1000,19.6058,-88.0458
+63,Cascada de Tamul,Fresco y húmedo,Cascada,1200,21.8936,-99.2458
+64,Cascada de Basaseachi,Fresco y húmedo,Cascada,1300,27.9936,-108.0458
+65,Cascada de Agua Azul,Cálido y húmedo,Cascada,1400,17.2458,-92.0458
+66,Cascada de Misol-Ha,Cálido y húmedo,Cascada,1100,17.1458,-92.3458
+67,Cascada de Hierve el Agua,Templado y soleado,Cascada,1000,16.8647,-96.2786
+68,Cascada de Cola de Caballo,Fresco y húmedo,Cascada,900,25.3458,-100.2458
+69,Cascada de Tamasopo,Fresco y húmedo,Cascada,1200,21.9458,-99.3458
+70,Cascada de Chipitín,Fresco y húmedo,Cascada,1300,21.8458,-99.4458
+71,Cascada de El Chuveje,Fresco y húmedo,Cascada,1100,21.7458,-99.5458
+72,Cascada de El Salto,Fresco y húmedo,Cascada,1000,21.6458,-99.6458
+73,Cascada de La Concha,Fresco y húmedo,Cascada,900,21.5458,-99.7458
+74,Cascada de La Llovizna,Fresco y húmedo,Cascada,1200,21.4458,-99.8458
+75,Cascada de La Tzaráracua,Fresco y húmedo,Cascada,1300,21.3458,-99.9458
+76,Cascada de Las Brisas,Fresco y húmedo,Cascada,1100,21.2458,-100.0458
+77,Cascada de Las Estacas,Fresco y húmedo,Cascada,1000,21.1458,-100.1458
+78,Cascada de Las Nubes,Fresco y húmedo,Cascada,900,21.0458,-100.2458
+79,Cascada de Los Ángeles,Fresco y húmedo,Cascada,1200,20.9458,-100.3458
+80,Cascada de Los Caracoles,Fresco y húmedo,Cascada,1300,20.8458,-100.4458
+81,Cascada de Los Cedros,Fresco y húmedo,Cascada,1100,20.7458,-100.5458
+82,Cascada de Los Dinamos,Fresco y húmedo,Cascada,1000,20.6458,-100.6458
+83,Cascada de Los Mármoles,Fresco y húmedo,Cascada,900,20.5458,-100.7458
+84,Cascada de Los Troncos,Fresco y húmedo,Cascada,1200,20.4458,-100.8458
+85,Cascada de Los Tulipanes,Fresco y húmedo,Cascada,1300,20.3458,-100.9458
+86,Cascada de Los Venados,Fresco y húmedo,Cascada,1100,20.2458,-101.0458
+87,Cascada de Los Volcanes,Fresco y húmedo,Cascada,1000,20.1458,-101.1458
+88,Cascada de Los Zopilotes,Fresco y húmedo,Cascada,900,20.0458,-101.2458
+89,Cascada de San Antonio,Fresco y húmedo,Cascada,1200,19.9458,-101.3458
+90,Cascada de San Juan,Fresco y húmedo,Cascada,1300,19.8458,-101.4458
+91,Cascada de San Miguel,Fresco y húmedo,Cascada,1100,19.7458,-101.5458
+92,Cascada de Santa María,Fresco y húmedo,Cascada,1000,19.6458,-101.6458
+93,Cascada de Santiago,Fresco y húmedo,Cascada,900,19.5458,-101.7458
+94,Cascada de Tepozteco,Fresco y húmedo,Cascada,1200,19.4458,-101.8458
+95,Cascada de Tepoztlán,Fresco y húmedo,Cascada,1300,19.3458,-101.9458
+96,Cascada de Tepozteco,Fresco y húmedo,Cascada,1100,19.2458,-102.0458
+97,Cascada de Tepoztlán,Fresco y húmedo,Cascada,1000,19.1458,-102.1458
+98,Cascada de Tepozteco,Fresco y húmedo,Cascada,900,19.0458,-102.2458
+99,Cascada de Tepoztlán,Fresco y húmedo,Cascada,1200,18.9458,-102.3458
+100,Cascada de Tepozteco,Fresco y húmedo,Cascada,1300,18.8458,-102.4458
